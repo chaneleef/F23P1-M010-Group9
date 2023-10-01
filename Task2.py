@@ -3,7 +3,7 @@ import pandas as pd
 wb = pd.read_excel('Project1.xlsx', dtype=str)
 bins = list(wb["Bin"])
 chars = list(wb["Char"])
-
+chars[13] = "\n"
 
 # Task 2
 
