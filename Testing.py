@@ -12,7 +12,7 @@ for i in range(len(bins)):
 #Opens and prints file
 f = open('TextOutput.txt')
 s1 = f.read() #reads it into a string
-print(s)
+print(s1)
 
 #Opens and prints Binary file
 f = open('BinOutput.txt')
