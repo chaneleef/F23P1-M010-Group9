@@ -53,4 +53,4 @@ def returnBinary(p1: str) -> tuple:
                 return binVal, p1
 
     # returns an empty string if given an empty string
-    return "",""
+    return "", ""
