@@ -1,15 +1,9 @@
-import pandas as pd
+# Task 6
+# Returns true if both text files are equal
 
-wb = pd.read_excel('F23P1-M010-Group9.xlsx', dtype=str)
-bins = list(wb["Bin"])
-chars = list(wb["Char"])
-chars[13] = "\n"
-
-
-def check_if_identical() -> bool: # or keep p1: str in ()
+def check_if_equal (p1: str) -> bool:
     # defaults p2 to TextOutput.txt
-    p1 = str(input("What's the file name for p1?"))
-    p2 = "TextOutput"
+    p2 = "TextOutput.txt"
 
     # for p1, opens and reads p1 into a string
     f = open(p1)
@@ -19,24 +13,10 @@ def check_if_identical() -> bool: # or keep p1: str in ()
     g = open(p2)
     s2 = g.read()
 
-    # checks if the two strings/files are different
-    same = True
-    i = 0
-    while True:
-        if len(s1) < i or len(s2) < i:
-            break
-        elif s1[i] == s2[i]:
-            i += 1
-            continue
-        else:
-            same = False
-
     # closes both files - at the end
     f.close()
     g.close()
 
-    if same == True:
-        return True
-    else:
-        return False
+    # returns True if equal and False otherwise
+    return s1 == s2
 
