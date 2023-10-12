@@ -11,7 +11,7 @@ chars[13] = "\n"
 # Reads a string and returns the binary value and new string that has that character removed
 
 
-def returnBinary(p1: str) -> tuple:
+def Task2(p1: str) -> tuple:
     # Gets the first 8 characters and sees if they're in the character list
     # the reason is one of our items is "Syracuse"
     if len(p1) >= 8:
