@@ -76,7 +76,8 @@ def Task2(p1: str) -> tuple:
 
 
 # Task 6
-# Returns true if both text files are equal
+# Checks is files are the same and returns True if they are
+
 
 def check_if_equal (p1: str) -> bool:
     # defaults p2 to TextOutput.txt
