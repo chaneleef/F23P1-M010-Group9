@@ -15,3 +15,4 @@ def decode(sn="BinOutput.txt")
     f = open("TextOutput.txt","w+")
     f.write(charStr)
     f.close
+
