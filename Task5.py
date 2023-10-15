@@ -1,7 +1,7 @@
 # function that decodes bin to char
 
 #defaults param to BinOutput.txt
-def decode(sn="BinOutput.txt")
+def decode(sn="BinOutput.txt"):
     f = open(fn, "r")
     s = f.read()
     f.close()
